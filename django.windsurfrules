@@ -1,0 +1,67 @@
+# Your Project Name - Project Guidelines
+
+## Project Overview
+...You project short description...
+
+Built with Django and follows Django's best practices and conventions for project structure and development.
+
+## Development Guidelines
+
+### Frontend Development
+- Use Tailwind CSS with (Your choice) component library
+- Icons are stored in `path/to/icons`
+- Use existing pagination templates instead of creating new ones
+
+### Coding Standards
+- Always include type definitions for all functions and all variables
+- Prefer using `list` instead of `List` where possible, same for `dict` and `Dict`. Note that we don't need to import `list` and `dict` explicitly!
+- Reference similar files before writing new code
+- Follow existing patterns and conventions
+- use async Django ORM in async functions
+
+### Code Quality Tools
+- Pre-push hooks (configured in `.pre-commit-config.yaml`):
+  - Black: Python code formatting with 88-character line length
+  - Flake8: Code style enforcement
+  - Mypy: Static type checking  with the following rules:
+    - All functions must have type annotations
+    - All parameters must have type annotations
+    - No untyped decorators
+    - Strict Optional handling
+    - No implicit Optional types
+    - Error codes must be shown in messages
+  - PyLint: Linting
+  - Django-upgrade: Django compatibility checks
+- Additional checks:
+  - Trailing whitespace and end-of-file fixes
+  - JSON, TOML, XML, YAML validation
+  - Debug statement detection
+  - Private key detection
+  - Docstring placement verification
+
+### Development Environment
+
+#### Python Requirements
+- Python version: 3.12
+- Package management: Poetry
+- Virtual environment must be activated before development
+
+#### Testing Requirements
+- Test files must be named `test_*.py`
+- Factory Boy for test data generation
+
+#### Dependencies
+Core dependencies:
+- Django 5.0.9
+- Celery 5.4.0 for async tasks
+- Redis 5.1.1 for caching
+- ...
+
+#### Production Requirements
+- Gunicorn as WSGI server
+- Sentry SDK for error tracking
+- Django-anymail for email handling
+
+### Required Environment Variables
+All the environment variables are defined in `.env` file.
+You can find the list of required environment variables in the `.env.template` file.
