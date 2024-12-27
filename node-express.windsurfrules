@@ -1,0 +1,91 @@
+# Node.js/Express Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with Node.js and Express.js, following REST API best practices and clean architecture principles.
+
+## Development Guidelines
+
+### Architecture
+- Follow Clean Architecture principles
+- Use layered architecture:
+  - Controllers (`src/controllers`)
+  - Services (`src/services`)
+  - Repositories (`src/repositories`)
+  - Models (`src/models`)
+  - Routes (`src/routes`)
+  - Middleware (`src/middleware`)
+- Implement proper error handling middleware
+- Use dependency injection pattern
+
+### Coding Standards
+- Use TypeScript for all files
+- Implement proper type definitions for all functions and variables
+- Follow SOLID principles
+- Implement proper validation using Joi or Zod
+- Use async/await instead of callbacks
+- Implement proper logging (Winston/Pino)
+- Follow REST API naming conventions
+- Implement proper API versioning
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - ESLint with TypeScript support
+  - Prettier for code formatting
+  - TypeScript compilation check
+  - Test execution
+- Additional checks:
+  - Security vulnerabilities scan
+  - Dependency updates check
+  - Code complexity analysis
+  - Dead code detection
+
+### Development Environment
+
+#### Node Requirements
+- Node.js version: 20.x
+- Package manager: npm/yarn
+- TypeScript 5.x
+
+#### Testing Requirements
+- Jest for unit testing
+- Supertest for API testing
+- Test files must be named `*.test.ts` or `*.spec.ts`
+- Coverage threshold: 85%
+- Integration tests for database operations
+
+#### Dependencies
+Core dependencies:
+- Express 4.x
+- TypeScript 5.x
+- Prisma/TypeORM for database
+- JWT for authentication
+- Winston/Pino for logging
+- Express-validator for validation
+
+#### Production Requirements
+- Use PM2 for process management
+- Implement rate limiting
+- Set up proper security headers
+- Configure CORS properly
+- Use compression middleware
+- Implement proper caching strategy
+- Set up monitoring (New Relic/DataDog)
+
+### Required Environment Variables
+All environment variables should be defined in `.env` file:
+- Database connection strings
+- JWT secrets
+- API keys
+- Service endpoints
+- Logging configuration
+
+Reference `.env.example` for required variables.
+
+### Database Guidelines
+- Use migrations for schema changes
+- Implement proper indexing strategy
+- Use transactions where necessary
+- Implement proper connection pooling
+- Follow naming conventions for tables and columns

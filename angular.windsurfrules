@@ -1,0 +1,93 @@
+# Angular Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with Angular following Angular's best practices and conventions for enterprise-grade applications.
+
+## Development Guidelines
+
+### Architecture
+- Follow Angular's modular architecture:
+  - Core module for singleton services
+  - Shared module for common components
+  - Feature modules for specific functionality
+- Implement proper lazy loading
+- Use standalone components where appropriate
+- Follow smart/presentational component pattern
+- Use proper dependency injection hierarchy
+
+### Coding Standards
+- Use strict TypeScript configuration
+- Follow Angular style guide
+- Implement proper type definitions
+- Use signals for state management
+- Follow proper naming conventions:
+  - Components: kebab-case files, PascalCase classes
+  - Services: kebab-case files, PascalCase classes
+  - Interfaces: PascalCase with 'I' prefix
+- Implement proper RxJS patterns:
+  - Use async pipe
+  - Proper subscription management
+  - Use appropriate operators
+  - Implement proper error handling
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - ESLint with Angular ESLint rules
+  - Prettier for formatting
+  - TypeScript checks
+  - Unit test execution
+- Additional checks:
+  - Angular template lint
+  - Circular dependency check
+  - Bundle size analysis
+  - Dead code elimination
+
+### Development Environment
+
+#### Requirements
+- Node.js version: 20.x
+- Package manager: npm/yarn/pnpm
+- Angular CLI: 17.x
+- TypeScript: 5.x
+
+#### Testing Requirements
+- Jasmine/Jest for unit testing
+- Cypress for E2E testing
+- Test files must be named `*.spec.ts`
+- Coverage threshold: 80%
+- Implement proper component testing
+- Use TestBed configuration properly
+
+#### Dependencies
+Core dependencies:
+- Angular 17.x
+- RxJS 7.x
+- NgRx (if needed)
+- Angular CDK
+- TypeScript 5.x
+
+#### Production Requirements
+- Implement proper build optimization
+- Use proper lazy loading strategy
+- Configure proper CSP headers
+- Implement PWA features if needed
+- Set up proper error tracking
+- Configure proper caching strategy
+
+### Required Environment Variables
+Environment configuration in `src/environments/`:
+- environment.ts
+- environment.prod.ts
+- environment.staging.ts
+
+Reference `environment.example.ts` for required variables.
+
+### Component Guidelines
+- Use OnPush change detection strategy
+- Implement proper lifecycle hooks
+- Use proper component composition
+- Follow proper template syntax
+- Implement proper form handling
+- Use proper routing strategy

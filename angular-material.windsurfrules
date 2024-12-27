@@ -1,0 +1,120 @@
+# Angular + Material Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with Angular and Angular Material, following Material Design principles and Angular best practices.
+
+## Development Guidelines
+
+### UI/UX Guidelines
+- Follow Material Design specifications
+- Use Material theming system:
+  - Define custom palettes in `_theme.scss`
+  - Use proper color variables
+  - Implement proper typography scale
+- Implement proper responsive design
+- Use proper Material density
+- Follow accessibility guidelines
+
+### Component Architecture
+- Extend Material components properly:
+  - Use proper inheritance patterns
+  - Implement proper form field controls
+  - Use proper overlay strategies
+- Implement proper component hierarchy:
+  - Layout components
+  - Container components
+  - Presentational components
+- Use Material CDK when needed:
+  - Virtual scrolling
+  - Drag and drop
+  - Overlay
+  - Accessibility
+
+### Coding Standards
+- Follow Angular Material best practices
+- Implement proper theme customization
+- Use proper Material typography
+- Follow proper form field implementation
+- Implement proper dialog patterns
+- Use proper Material icons
+- Follow proper animation patterns
+
+### Material-Specific Guidelines
+- Use proper Material components:
+  - Mat-table with proper data source
+  - Mat-form-field with proper validation
+  - Mat-dialog with proper configuration
+  - Mat-snackbar for notifications
+  - Mat-menu with proper positioning
+- Implement proper Material layouts:
+  - Use flex layout properly
+  - Implement proper grid system
+  - Use proper spacing system
+
+### Development Environment
+
+#### Requirements
+- Node.js version: 20.x
+- Angular CLI: 17.x
+- Angular Material: 17.x
+- TypeScript: 5.x
+
+#### Dependencies
+Core dependencies:
+- Angular 17.x
+- Angular Material 17.x
+- Angular CDK
+- Material Icons
+- RxJS 7.x
+
+#### Testing Requirements
+- Test Material components properly
+- Use Material harnesses
+- Implement proper overlay testing
+- Test theme switching
+- Test accessibility
+
+### Component Guidelines
+- Use proper Material mixins
+- Implement proper theme switching
+- Use proper Material typography
+- Follow proper form implementation
+- Use proper dialog patterns
+- Implement proper table patterns
+- Follow proper navigation patterns
+
+### Material Theming
+- Define proper color palettes
+- Use proper contrast colors
+- Implement proper dark theme
+- Use proper typography scale
+- Follow proper density scale
+- Implement proper elevation
+
+### Accessibility Guidelines
+- Use proper ARIA labels
+- Implement proper focus management
+- Use proper color contrast
+- Follow proper keyboard navigation
+- Implement proper screen reader support
+
+### Performance Guidelines
+- Use proper virtual scrolling
+- Implement proper lazy loading
+- Use proper Material tree-shaking
+- Follow proper bundle optimization
+- Implement proper caching strategy
+
+### Required Environment Variables
+Environment configuration in `src/environments/`:
+- environment.ts
+- environment.prod.ts
+Reference `environment.example.ts` for required variables.
+
+### Additional Material-Specific Tools
+- Material Theme Generator
+- Material Icons Library
+- Material Color Tool
+- Material Typography Tool

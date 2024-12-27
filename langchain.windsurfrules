@@ -1,0 +1,135 @@
+# LangChain Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with LangChain following best practices for LLM application development.
+
+## Development Guidelines
+
+### Project Structure
+- Follow modular organization:
+  - `chains/` for chain definitions
+  - `prompts/` for prompt templates
+  - `agents/` for agent definitions
+  - `tools/` for custom tools
+  - `models/` for model configurations
+- Use proper component separation:
+  - Proper chain composition
+  - Modular prompt management
+  - Organized tool definitions
+
+### Architecture
+- Follow LangChain patterns:
+  - Use proper chain types
+  - Implement proper memory patterns
+  - Use appropriate embeddings
+  - Follow proper agent patterns
+- Implement proper error handling
+- Use proper caching strategies
+
+### Coding Standards
+- Use type hints consistently
+- Follow proper chain composition:
+  - Sequential chains
+  - Router chains
+  - Transform chains
+- Implement proper prompt engineering:
+  - Use template variables
+  - Implement proper few-shot examples
+  - Follow proper prompt structure
+- Use proper memory management:
+  - Conversation buffers
+  - Vector stores
+  - Summary memories
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - Black for formatting
+  - Flake8 for linting
+  - MyPy for type checking
+  - Pytest execution
+- Additional checks:
+  - Token usage monitoring
+  - Response quality checks
+  - Performance monitoring
+  - Cost tracking
+
+### Development Environment
+
+#### Requirements
+- Python version: 3.11+
+- LangChain: 0.1.0+
+- OpenAI API (or other LLM provider)
+- Vector store solution
+
+#### Testing Requirements
+- Pytest for testing
+- Mock LLM responses
+- Test prompt templates
+- Coverage threshold: 80%
+- Test chain compositions
+
+#### Dependencies
+Core dependencies:
+- LangChain
+- OpenAI (or alternative)
+- ChromaDB/FAISS
+- Tiktoken
+- Pydantic
+
+#### Production Requirements
+- Implement proper rate limiting
+- Use proper token management
+- Configure proper logging
+- Set up proper monitoring
+- Implement proper caching
+
+### LLM Guidelines
+- Use proper model selection:
+  - Choose appropriate models
+  - Configure proper parameters
+  - Implement fallback strategies
+- Implement proper prompt management:
+  - Version control prompts
+  - Use template systems
+  - Implement proper validation
+
+### Vector Store Guidelines
+- Choose appropriate solution:
+  - ChromaDB
+  - FAISS
+  - Pinecone
+- Implement proper indexing
+- Use proper similarity search
+- Configure proper persistence
+
+### Memory Management
+- Use appropriate memory types:
+  - Conversation buffers
+  - Vector stores
+  - Summary memories
+- Implement proper cleanup
+- Configure proper persistence
+
+### Required Environment Variables
+Environment variables in `.env`:
+- OPENAI_API_KEY
+- VECTOR_STORE_PATH
+- MODEL_NAME
+- TEMPERATURE
+Reference `.env.example` for required variables.
+
+### Performance Guidelines
+- Implement proper caching
+- Use batch processing
+- Configure proper rate limits
+- Implement proper retries
+- Monitor token usage
+
+### Cost Management
+- Implement proper tracking
+- Use appropriate models
+- Configure proper caching
+- Monitor usage patterns
+- Implement cost controls

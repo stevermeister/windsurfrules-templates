@@ -1,0 +1,87 @@
+# Spring Boot Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with Spring Boot following Spring's best practices and conventions for enterprise Java applications.
+
+## Development Guidelines
+
+### Architecture
+- Follow layered architecture:
+  - Controllers (`src/main/java/com/company/controllers`)
+  - Services (`src/main/java/com/company/services`)
+  - Repositories (`src/main/java/com/company/repositories`)
+  - Models (`src/main/java/com/company/models`)
+  - DTOs (`src/main/java/com/company/dto`)
+- Use Spring's dependency injection
+- Implement proper exception handling
+- Follow RESTful API design principles
+
+### Coding Standards
+- Use Java 21 features where appropriate
+- Implement proper documentation using JavaDoc
+- Use Lombok for reducing boilerplate
+- Follow Spring's naming conventions
+- Use constructor injection over field injection
+- Implement proper validation using Bean Validation
+- Use Optional for null handling
+- Implement proper logging using SLF4J
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - Checkstyle for code style
+  - SpotBugs for bug detection
+  - PMD for code analysis
+  - Unit test execution
+- Additional checks:
+  - SonarQube analysis
+  - Dependency vulnerability check
+  - Code coverage check
+  - Architecture tests
+
+### Development Environment
+
+#### Java Requirements
+- Java version: 21
+- Build tool: Maven/Gradle
+- Spring Boot: 3.x
+
+#### Testing Requirements
+- JUnit 5 for unit testing
+- Mockito for mocking
+- TestContainers for integration tests
+- Test files must be in `src/test/java`
+- Coverage threshold: 80%
+
+#### Dependencies
+Core dependencies:
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+- Spring Boot Starter Security
+- Spring Boot Starter Validation
+- Spring Boot Actuator
+- Flyway/Liquibase for migrations
+
+#### Production Requirements
+- Use proper profiles (dev, test, prod)
+- Implement health checks
+- Configure metrics collection
+- Set up proper logging
+- Configure connection pooling
+- Implement caching strategy
+- Set up monitoring
+
+### Required Environment Variables
+Configuration properties should be in:
+- `application.yml` for default config
+- `application-{profile}.yml` for profile-specific config
+Reference `application-example.yml` for required properties.
+
+### Database Guidelines
+- Use JPA entities with proper annotations
+- Implement auditing using @EntityListeners
+- Use proper transaction management
+- Follow database naming conventions
+- Implement proper indexing strategy
+- Use database migrations

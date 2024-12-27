@@ -1,0 +1,77 @@
+# React Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with React and follows React's best practices and conventions for project structure and development.
+
+## Development Guidelines
+
+### Frontend Architecture
+- Use functional components with hooks
+- Implement atomic design principles for component organization
+- Store components in `src/components` following atomic design folders (atoms, molecules, organisms, templates, pages)
+- Keep business logic in custom hooks under `src/hooks`
+- Store types in `src/types` directory
+- Use React Context for global state management
+- Redux/RTK for complex state management scenarios
+
+### Coding Standards
+- Use TypeScript for all components and utilities
+- Implement proper type definitions for all props, states, and functions
+- Follow ESLint and Prettier configurations
+- Use CSS-in-JS with styled-components or emotion
+- Implement proper error boundaries
+- Use React.Suspense for code-splitting
+- Implement proper loading states for async operations
+
+### Code Quality Tools
+- Pre-commit hooks (configured in `.husky`):
+  - ESLint: Code style enforcement
+  - Prettier: Code formatting
+  - TypeScript compilation check
+  - Unit test execution
+- Additional checks:
+  - Bundle size analysis
+  - Unused imports detection
+  - Accessibility checks (jsx-a11y)
+  - Performance monitoring
+
+### Development Environment
+
+#### Node Requirements
+- Node.js version: 20.x
+- Package manager: pnpm
+- Module bundler: Vite
+
+#### Testing Requirements
+- Jest for unit testing
+- React Testing Library for component testing
+- Cypress for E2E testing
+- Test files must be named `*.test.tsx` or `*.spec.tsx`
+- Coverage threshold: 80%
+
+#### Dependencies
+Core dependencies:
+- React 18.x
+- TypeScript 5.x
+- React Router 6.x
+- Styled-components/Emotion
+- React Query for data fetching
+- Zod for runtime type checking
+
+#### Production Requirements
+- Implement proper code splitting
+- Use React.lazy for route-based code splitting
+- Configure proper CSP headers
+- Implement service workers for PWA support
+- Use error tracking (Sentry)
+- Analytics integration
+
+### Required Environment Variables
+All environment variables should be prefixed with `VITE_` and defined in `.env` files:
+- `.env.development` for development
+- `.env.production` for production
+- `.env.test` for testing
+
+Reference `.env.example` for required variables.

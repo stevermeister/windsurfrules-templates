@@ -1,0 +1,150 @@
+# .NET Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with .NET 8 following modern C# patterns and .NET best practices.
+
+## Development Guidelines
+
+### Project Structure
+- Follow Clean Architecture:
+  - Domain layer
+  - Application layer
+  - Infrastructure layer
+  - Presentation layer
+- Use proper solution organization:
+  - Proper project separation
+  - Feature-based structure
+  - Proper dependency flow
+
+### Architecture
+- Follow SOLID principles
+- Use proper design patterns:
+  - Repository pattern
+  - Unit of Work
+  - CQRS (if needed)
+  - Mediator pattern
+- Implement proper DI
+- Use proper async patterns
+
+### Coding Standards
+- Follow C# coding conventions
+- Use proper type system:
+  - Proper nullable reference types
+  - Record types where appropriate
+  - Proper generic constraints
+- Implement proper error handling:
+  - Use proper exception types
+  - Implement proper logging
+  - Follow async/await best practices
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - .NET format
+  - StyleCop
+  - ReSharper CLI
+  - Unit test execution
+- Additional checks:
+  - SonarQube analysis
+  - Code coverage
+  - Security scanning
+  - Dependency updates
+
+### Development Environment
+
+#### Requirements
+- .NET SDK: 8.0
+- Visual Studio 2022/Rider
+- SQL Server/PostgreSQL
+- Docker (optional)
+
+#### Testing Requirements
+- xUnit/NUnit for testing
+- Moq/NSubstitute for mocking
+- Coverage threshold: 80%
+- Proper integration tests
+- Proper unit tests
+
+#### Dependencies
+Core dependencies:
+- Entity Framework Core
+- AutoMapper
+- FluentValidation
+- MediatR (if using CQRS)
+- Serilog/NLog
+
+#### Production Requirements
+- Use proper hosting model
+- Configure proper logging
+- Set up proper monitoring
+- Implement proper caching
+- Configure proper security
+
+### Database Guidelines
+- Use Entity Framework Core:
+  - Proper migrations
+  - Proper configurations
+  - Proper relationships
+  - Proper indexing
+- Follow naming conventions
+- Use proper connection handling
+
+### API Guidelines
+- Follow REST principles
+- Use proper versioning
+- Implement proper documentation
+- Use proper response types
+- Follow proper security patterns
+
+### Required Configuration
+Configuration in `appsettings.json`:
+- ConnectionStrings
+- Logging settings
+- Authentication settings
+- Other app-specific settings
+
+Reference `appsettings.example.json` for required settings.
+
+### Security Guidelines
+- Use proper authentication:
+  - JWT configuration
+  - Identity Server
+  - Azure AD
+- Implement proper authorization:
+  - Policy-based
+  - Role-based
+  - Claims-based
+- Follow security best practices
+
+### Performance Guidelines
+- Use proper caching:
+  - Memory Cache
+  - Distributed Cache
+  - Response Caching
+- Implement proper async patterns
+- Use proper connection pooling
+- Configure proper compression
+
+### Logging Guidelines
+- Use structured logging
+- Implement proper log levels
+- Configure proper sinks
+- Use proper correlation
+- Implement proper context
+
+### Error Handling
+- Use proper middleware
+- Implement proper validation
+- Use proper exception filters
+- Configure proper status codes
+- Follow proper patterns
+
+### Deployment Guidelines
+- Use proper CI/CD:
+  - Azure DevOps
+  - GitHub Actions
+  - Jenkins
+- Configure proper environments
+- Use proper containerization
+- Implement proper monitoring

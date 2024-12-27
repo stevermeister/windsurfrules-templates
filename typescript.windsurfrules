@@ -1,0 +1,116 @@
+# TypeScript Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Pure TypeScript project following TypeScript best practices and modern JavaScript patterns.
+
+## Development Guidelines
+
+### Project Structure
+- Use proper module organization:
+  - `src/` for source files
+  - `types/` for type definitions
+  - `tests/` for test files
+  - `dist/` for compiled output
+- Follow proper file naming conventions:
+  - Use `.ts` extension
+  - Use `.d.ts` for type definitions
+  - Use `.spec.ts` for tests
+
+### TypeScript Configuration
+- Use strict TypeScript settings:
+  - `strict: true`
+  - `noImplicitAny: true`
+  - `strictNullChecks: true`
+  - `strictFunctionTypes: true`
+  - `noImplicitThis: true`
+  - `useUnknownInCatchVariables: true`
+- Configure proper module resolution
+- Set appropriate target version
+- Configure proper source maps
+
+### Coding Standards
+- Use proper type definitions:
+  - Prefer interfaces for object types
+  - Use type aliases for union types
+  - Implement proper generics
+  - Use proper utility types
+- Follow functional programming principles:
+  - Use immutable data structures
+  - Implement proper error handling
+  - Use proper async patterns
+- Use modern TypeScript features:
+  - Template literal types
+  - Conditional types
+  - Mapped types
+  - Index types
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - ESLint with TypeScript rules
+  - Prettier for formatting
+  - TypeScript compilation check
+  - Unit test execution
+- Additional checks:
+  - Circular dependency check
+  - Dead code elimination
+  - Import organization
+  - Type coverage check
+
+### Development Environment
+
+#### Requirements
+- Node.js version: 20.x
+- TypeScript: 5.x
+- Package manager: npm/yarn/pnpm
+- Build tool: tsc/esbuild/swc
+
+#### Testing Requirements
+- Jest with ts-jest
+- Test files must be named `*.spec.ts`
+- Coverage threshold: 85%
+- Implement proper type testing
+- Use proper mocking patterns
+
+#### Dependencies
+Core dependencies:
+- TypeScript 5.x
+- ESLint
+- Prettier
+- Jest
+- ts-node for development
+
+#### Production Requirements
+- Configure proper build process
+- Implement proper tree-shaking
+- Configure proper source maps
+- Set up proper error tracking
+- Implement proper logging
+
+### Type Guidelines
+- Use proper type declarations:
+  - Avoid `any` type
+  - Use proper union types
+  - Implement proper generics
+  - Use proper utility types
+- Follow type naming conventions:
+  - PascalCase for types
+  - Prefix interfaces with 'I'
+  - Use proper type composition
+
+### Error Handling
+- Use proper error types
+- Implement proper error handling
+- Use proper async/await patterns
+- Implement proper type guards
+- Use proper assertion functions
+
+### Required Configuration Files
+- tsconfig.json
+- .eslintrc.js
+- .prettierrc
+- jest.config.js
+- package.json
+
+Reference `tsconfig.example.json` for required compiler options.

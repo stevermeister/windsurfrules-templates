@@ -1,0 +1,112 @@
+# Flask Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with Flask following Flask's best practices and modern Python patterns.
+
+## Development Guidelines
+
+### Project Structure
+- Follow application factory pattern:
+  - `app/` for application code
+  - `config/` for configuration
+  - `tests/` for tests
+  - `migrations/` for database migrations
+- Use Blueprint organization:
+  - Modular blueprints
+  - Proper route organization
+  - Feature-based structure
+
+### Architecture
+- Follow proper MVC pattern:
+  - Models in `models/`
+  - Views in `views/`
+  - Templates in `templates/`
+- Use proper extension initialization
+- Implement proper configuration handling
+- Follow RESTful API principles
+
+### Coding Standards
+- Follow PEP 8 guidelines
+- Use type hints (Python 3.9+)
+- Implement proper error handling
+- Use proper logging patterns
+- Follow Flask best practices:
+  - Proper route declarations
+  - Proper request handling
+  - Proper response formatting
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - Black for formatting
+  - Flake8 for linting
+  - MyPy for type checking
+  - Pytest execution
+- Additional checks:
+  - Bandit for security
+  - Safety for dependencies
+  - Coverage reporting
+  - Import sorting
+
+### Development Environment
+
+#### Requirements
+- Python version: 3.11+
+- Virtual environment management
+- Flask: 3.x
+- SQLAlchemy: 2.x
+
+#### Testing Requirements
+- Pytest for testing
+- Factory Boy for fixtures
+- Coverage threshold: 80%
+- Test files must be named `test_*.py`
+- Implement proper integration tests
+
+#### Dependencies
+Core dependencies:
+- Flask 3.x
+- Flask-SQLAlchemy
+- Flask-Migrate
+- Flask-Login (if needed)
+- Flask-RESTful (if needed)
+- Flask-Marshmallow (if needed)
+
+#### Production Requirements
+- Use proper WSGI server (Gunicorn)
+- Implement proper caching
+- Configure proper logging
+- Set up proper monitoring
+- Implement proper security headers
+
+### Database Guidelines
+- Use Flask-SQLAlchemy properly
+- Implement proper migrations
+- Use proper connection pooling
+- Follow proper model patterns
+- Implement proper relationships
+
+### Security Guidelines
+- Use proper CSRF protection
+- Implement proper authentication
+- Use proper password hashing
+- Configure proper session handling
+- Follow proper security headers
+
+### Required Environment Variables
+Environment variables in `.env`:
+- FLASK_APP
+- FLASK_ENV
+- DATABASE_URL
+- SECRET_KEY
+- Other app-specific variables
+
+Reference `.env.example` for required variables.
+
+### Template Guidelines
+- Use Jinja2 properly
+- Implement proper template inheritance
+- Use proper template organization
+- Follow proper asset management
+- Implement proper form handling

@@ -1,0 +1,120 @@
+# FastAPI Project - Project Guidelines
+
+## Project Overview
+...Your project short description...
+
+Built with FastAPI following modern Python async patterns and OpenAPI standards.
+
+## Development Guidelines
+
+### Project Structure
+- Follow domain-driven structure:
+  - `app/` for application code
+  - `api/` for API routes
+  - `core/` for core functionality
+  - `models/` for data models
+  - `schemas/` for Pydantic models
+- Use proper module organization:
+  - Router-based organization
+  - Feature-based structure
+  - Proper dependency management
+
+### Architecture
+- Follow FastAPI best practices:
+  - Use dependency injection
+  - Implement proper middleware
+  - Use proper error handling
+  - Follow async patterns
+- Implement proper OpenAPI documentation
+- Use proper security patterns
+
+### Coding Standards
+- Use Python type hints
+- Follow PEP 8 guidelines
+- Implement proper async patterns:
+  - Use proper async/await
+  - Implement proper connection handling
+  - Follow proper concurrency patterns
+- Use Pydantic models properly:
+  - Proper validation
+  - Proper serialization
+  - Proper model inheritance
+
+### Code Quality Tools
+- Pre-commit hooks:
+  - Black for formatting
+  - Flake8 for linting
+  - MyPy for type checking
+  - Pytest execution
+- Additional checks:
+  - Bandit for security
+  - Safety for dependencies
+  - Import sorting
+  - Coverage reporting
+
+### Development Environment
+
+#### Requirements
+- Python version: 3.11+
+- FastAPI: 0.100+
+- Pydantic: 2.x
+- Uvicorn for ASGI server
+
+#### Testing Requirements
+- Pytest for testing
+- Pytest-asyncio for async tests
+- TestClient for API testing
+- Coverage threshold: 85%
+- Test files must be named `test_*.py`
+
+#### Dependencies
+Core dependencies:
+- FastAPI
+- Pydantic
+- SQLAlchemy (async)
+- Alembic for migrations
+- Python-jose for JWT
+- Passlib for hashing
+
+#### Production Requirements
+- Use proper ASGI server (Uvicorn)
+- Implement proper logging
+- Configure proper monitoring
+- Set up proper rate limiting
+- Implement proper caching
+
+### API Documentation
+- Use proper OpenAPI schemas
+- Implement proper response models
+- Use proper tag organization
+- Follow proper versioning
+- Implement proper security schemes
+
+### Database Guidelines
+- Use async SQLAlchemy
+- Implement proper migrations
+- Use proper connection pooling
+- Follow proper model patterns
+- Implement proper relationships
+
+### Security Guidelines
+- Use proper JWT implementation
+- Implement proper OAuth2
+- Use proper password hashing
+- Configure proper CORS
+- Follow proper security headers
+
+### Required Environment Variables
+Environment variables in `.env`:
+- DATABASE_URL
+- SECRET_KEY
+- ALGORITHM
+- ACCESS_TOKEN_EXPIRE_MINUTES
+Reference `.env.example` for required variables.
+
+### Performance Guidelines
+- Use proper async patterns
+- Implement proper caching
+- Use proper connection pooling
+- Follow proper N+1 prevention
+- Implement proper background tasks
